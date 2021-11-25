@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Serif Caption", serif;
+  /* background-color: black; */
+  --ratio: 1 / 1.1;
+  --size: 99vmin;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.width {
+  max-width: 100%;
+  margin: 1%;
+  padding: 0 15%;
+}
+/* navbar styling */
+.navbar {
+  width: 100%;
+  position: fixed;
+  background: black;
+  z-index: 999;
+}
+.navbar .width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: white;
+  margin-left: 20px;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background: url(mainimage.jpeg) no-repeat center;
+  height: 100vh;
+  background-color: black;
+}
+.home .links img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  margin-top: 20%;
+  width: 3%;
+  margin-left: 5%;
+}
+.home .links .inst {
+  margin-top: -40px;
+}
+.home .width {
+  color: white;
+  min-height: 2%;
+  margin: auto 0 auto 0;
+  font-size: 25px;
+  margin-left: 5%;
+}
+/* about section styling  */
+section {
+  padding: 3% 0;
+}
+.about {
+  background-color: black;
+}
+.about .title {
+  position: relative;
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center;
+  margin: 7%;
+  color: white;
+}
+.about .title::before {
+  content: "";
+  position: absolute;
+  bottom: -4%;
+  left: 50%;
+  width: 20%;
+  height: 3%;
+  background: white;
+  transform: translateX(-50%);
+}
+.about .title::after {
+  content: "про мене";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  padding: -3%;
+  list-style: none;
+  font-size: 1rem;
+  background: black;
+  transform: translateX(-50%);
+  color: white;
+}
+.about .about-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: right;
+  justify-content: space-between;
+}
+.about .about-page .column-left {
+  width: 65%;
+}
+.textt {
+  font-size: 1.2rem;
+  color: white;
+  width: 100%;
+  height: 100%;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.about .about-page .column-left img {
+  width: 120%;
+  object-fit: cover;
+}
+
+.about .about-page .column-right {
+  width: 35%;
+  color: white;
+  align-items: center;
+  margin-top: 17%;
+  text-align: right;
+  font-size: 1rem;
+}
+
+/* skills section styling */
+.skills {
+  background-color: black;
+  color: white;
+}
+.skills .title {
+  position: relative;
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center;
+  margin: 7%;
+  color: white;
+}
+.skills .title::before {
+  content: "";
+  position: absolute;
+  bottom: -4%;
+  left: 50%;
+  width: 30%;
+  height: 3%;
+  background: white;
+  transform: translateX(-50%);
+}
+.skills .title::after {
+  content: "про скіли та роботи";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  padding: -3%;
+  list-style: none;
+  font-size: 1rem;
+  background: black;
+  transform: translateX(-50%);
+  color: white;
+}
+.skills .carousel .card {
+  background: #222;
+  border-radius: 2px;
+  padding: 25px 30px;
+}
+.skills .carousel .card .box {
+  display: flexbox;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding: 5%;
+  cursor: pointer;
+  color: white;
+}
+.skills .carousel .card img {
+  width: 150px;
+  height: 150px;
+  padding: none;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 5px;
+}
+.skills .carousel .card .text {
+  width: calc(33%- 20px);
+  text-align: center;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+/* slider styling */
+.slide-show {
+  box-sizing: border-box;
+  background: black;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  position: relative;
+  margin: auto;
+  width: 40%;
+  object-fit: cover;
+}
+.slide .info {
+  color: white;
+  font-weight: lighter;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: white;
+  font-weight: lighter;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* contact section styling */
+.contact {
+  background-color: black;
+  color: white;
+}
+.contact .title {
+  position: relative;
+  font-size: 70px;
+  font-weight: 200;
+  text-align: center;
+  margin: 7%;
+  color: white;
+}
+.contact .title::before {
+  content: "";
+  position: absolute;
+  bottom: -4%;
+  left: 50%;
+  width: 30%;
+  height: 3%;
+  background: white;
+  transform: translateX(-50%);
+}
+.contact .title::after {
+  content: "про контакти";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  padding: -3%;
+  list-style: none;
+  font-size: 1rem;
+  background: black;
+  transform: translateX(-50%);
+  color: white;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.contact .contact-content .text {
+  font-size: 1.3rem;
+  margin-bottom: 7%;
+}
+.contact .contact-content .column-left p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  /* height: 20%; */
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.contact .contact-content .info i {
+  font-size: 0.7rem;
+  color: white;
+  width: 10%;
+}

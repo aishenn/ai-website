@@ -11,10 +11,19 @@
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap"
     />
-    <script src="https://kit.fontawesome.com/5b1d63909b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/723d4b98ec.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />
+    <!--Light Gallery--> 
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery.min.css" 
+      integrity="sha512-e/7+n/bcByOQg6+rGt7Bx12Si0rpj4Xfe3EeS3W2RDSGGG/qT9rC7ZQCVAgaVAmZKZisvZ1DqaMd66TzfVO/Sw==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+    /> 
+    <!--Light Gallery-->
   </head>
   <body>
     <header>
@@ -22,9 +31,9 @@
         <div class="width">
           <div class="logo"><a href="#">aishenn</a></div>
           <ul class="menu">
-            <li><a href="#">01 про мене</a></li>
-            <li><a href="#">02 про скіли та роботи</a></li>
-            <li><a href="#">03 про контакти</a></li>
+            <li><a href="#about">01 про мене</a></li>
+            <li><a href="#skills">02 про скіли та роботи</a></li>
+            <li><a href="#contacts">03 про контакти</a></li>
           </ul>
         </div>
        
@@ -32,9 +41,10 @@
     </header>
     <!--home section start-->
     <section class="home">
+      
         <div class="links">
-            <div class="behance" ><a href="https://www.behance.net/aisenaisenccd"></a>>
-                <img src="behance.png"></div>
+            <div class="behance" ><a href="https://www.behance.net/aisenaisenccd">
+                <img src="behance.png"></a></div>
                 <div class="inst"><a href="https://www.instagram.com/aishenibrahimova/"><img src="inst.png"></a></div>
             
         </div>
@@ -45,9 +55,11 @@
           <div class="text-3">я починаючий графічний дизайнер.</div>
         </div>
       </div>
+  
     </section>
     <!--about section start-->
     <section class="about">
+      <div id="about">
       <div class="width">
         <h2 class="title">01</h2>
         <div class="about-page">
@@ -78,6 +90,7 @@
     </section>
     <!--skills and works section start-->
     <section class="skills">
+      <div id="skills">
       <div class="width">
         <h2 class="title">02</h2>
         <div class="carousel .owl-carousel"><div class="card">
@@ -88,10 +101,10 @@
                     тому вважаю що тут мій скілл 9/10, все таки неможливо знати все-все. Моя любов навіки :)
                 </p>
                 <img src="figma.png">
-                <div class="text">Figma</div>
+                <div class="text"Figma>
                 <p>З цим редакотором я знайома менше року, але він зручний для вивчення веб-дизайну, отже
                     я повинна знати як тут все працює. Скілл 7/10 
-                </p>
+                </p></div>
                 <img src="indsign.png">
                 <div class="text">InDesign</div>
                 <p> Даний редактор - недавнє моє відкриття. Він допомагає мені верстати книгу і дуже зручний.
@@ -99,16 +112,20 @@
             </div>
         </div>
 
-        
+      </div>
     </section>
     <!-- slider section start -->
     <section class="slide-show">
         <div class="slides">
             <div class="width">
             <div class="slide">
-                <img src="posterbb.jpeg" alt="">
+              <a href="posterbb.jpeg"
+              target="_blank">
+                
+                <img src="posterbb.jpeg">
                 <div class="info">
                     <h3>poster for Hong Kong beer brew company</h3>
+                  </a>
                 </div>
 
             </div>
@@ -125,60 +142,88 @@
                     <h3>cover for a book 'Of mice and men'</h3>
                 </div>
 
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <div class="navigation">
-            <div class="bttn"></div>
-            <div class="bttn"></div>
-            <div class="bttn"></div>
-        </div>
-        <br>
+      
         <div class="text-align: center">
-            <span class="dot" onclick="currentSlides(1)"></span>
-            <span class="dot" onclick="currentSlides(2)"></span>
-            <span class="dot" onclick="currentSlides(3)"></span>
+            
         </div>
     </div>
     
     </section>
     <!-- contact section start -->
     <section class="contact">
+      <div id="contacts"></div>
         <div class="width">
             <h2 class="title">03</h2>
             <div class="contact-content">
                 <div class="column-left">
                     <div class="text">
-                        <p>Філ фрі ту текст мі</p>
-                        <div class="icons">
-                            <div class="row">
-                                <i class="fas fa-id-card-alt"></i>
-                                <div class="info">
-                                    <div class="head">Aishen</div>
-                                    
+                        <p>Терпеливо сиджу і чекаю ваших відгуків та пропозицій</p>
+                        <div class="contact_container container grid">
+                          <div>
+                            <div class="contact_info">
+                              <i class="fa-solid fa-phone"></i>
+                            </div>
+                              <div>
+                                <h3 class="contact_title">Кол мі</h3>
+                                <span class="contact_subtitle">0990009900</span>
+                              </div>
+                              <div class="contact_info">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                  <h3 class="contact_title">Текст мі</h3>
+                                  <span class="contact_subtitle">@ibrahimovaasihen</span>
                                 </div>
                             </div>
-                            <div class="row">
-                                <i class="fa-thin fa-location-dot"></i>
-                                <div class="info">
-                                    <div class="head">Lviv</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <i class="fas fa-envelope-square"></i>
-                                <div class="info">
-                                    <div class="head">@ibrahimovaaishen</div>
-                                </div>
-                            </div>
+                            <div class="contact_info">
+                              <i class="fas fa-globe-americas"></i>
+                              <div>
+                                <h3 class="contact_title">Файнд мі хіар</h3>
+                                <span class="contact_subtitle">Львів сіті</span>
+                              </div>
+                          </div>
+                          </div>
                         </div>
                     </div>
             </div>
-            
-            </div>
+            <form action="" class="contact_form grid">
+              <div class="contact_inputs grid">
+                <div class="contact_content">
+                 <label for="" class="contact__label">Імя</label> 
+                 <input type="text" class="contact__input">
+                </div>
+                <div class="contact_content">
+                  <label for="" class="contact__label">Email</label> 
+                  <input type="email" class="contact__input">
+                 </div>
+                 <div class="contact_content">
+                  <label for="" class="contact__label">Йор вішес</label> 
+                  <input type="text" class="contact__input">
+                 </div>
+                 <div class="contact_content">
+                  <label for="" class="contact__label">Ваш меседж</label> 
+                  <textarea name="" id="" cols="0" rows="8" class="contact__input"></textarea>
+                 </div>
+                 <div>
+                   <a href="#" class="button-flex">Клік</a>
+                 </div>
+              </div>
+
+            </form>
         </div>
     </section>
     
 <script src="script.js"></script>
+<script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js" 
+      integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+    ></script> 
+ 
+    <script type="text/javascript"> 
+      lightGallery(document.getElementById("lightgallery"), { 
+        selector: ".gallery--item a", 
+      }); 
+    </script>
   </body>
 </html>
